@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "GA Realtime Doubler",
+  "version": "0.0.2",
+  "description": "A simple hack to double the live data on Google Analytics' realtime page, if you're sampling at 50%.",
+  "content_scripts": [
+   {
+      "matches": ["*://www.google.com/analytics/web/*"],
+      "js": ["gadoubler.js"]
+   }]
+}
